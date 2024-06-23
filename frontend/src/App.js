@@ -1,8 +1,5 @@
 import React from 'react';
 import { Search } from 'lucide-react';
-// import { Card, CardHeader, CardContent } from '@/components/ui/card';
-// import { Input } from '@/components/ui/input';
-// import { Button } from '@/components/ui/button';
 import { Card, CardHeader, CardContent } from './components/ui/card';
 import { Input } from './components/ui/input';
 import { Button } from './components/ui/button';
