@@ -2,8 +2,8 @@ import React from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import { ThemeProvider, createTheme } from '@material-ui/core/styles';
 import CssBaseline from '@material-ui/core/CssBaseline';
-import SearchBar from './components/SearchBar';
-import ResultsPage from './components/ResultsPage';
+import Search from './components/SearchPage';
+// import ResultsPage from './components/ResultsPage';
 
 const theme = createTheme({
   palette: {
@@ -23,7 +23,7 @@ function App() {
       <Router>
         <div className="App">
           <Switch>
-            <Route exact path="/" component={SearchBar} />
+            <Route exact path="/" component={Search} />
             <Route path="/results" component={ResultsPage} />
           </Switch>
         </div>
