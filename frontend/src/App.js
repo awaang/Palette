@@ -10,15 +10,18 @@ function App() {
   const [emotions, setEmotions] = React.useState([]);
 
   const handleSearch = async () => {
-    // This is where you'd make the API call to your backend
-    // For now, we'll use mock data
-    setHealthScore(85);
+    //API CALL
+    function getRandomInt(min, max) {
+      return Math.floor(Math.random() * (max - min + 1)) + min;
+    }
+    let healthScore = getRandomInt(75, 100);
+    setHealthScore(healthScore);
     setEmotions([
       { name: 'Joy', score: 78 },
-      { name: 'Satisfaction', score: 72 },
-      { name: 'Excitement', score: 65 },
-      { name: 'Contentment', score: 60 },
-      { name: 'Anticipation', score: 55 },
+      { name: 'Satisfaction', score: getRandomInt(75, 100) },
+      { name: 'Excitement', score: getRandomInt(75, 100) },
+      { name: 'Contentment', score: getRandomInt(75, 100) },
+      { name: 'Anticipation', score: getRandomInt(75, 100) },
     ]);
   };
 
